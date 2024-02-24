@@ -40,7 +40,7 @@ acg-<username>/external/glfwlib/include/GLFW/glfw3.h
 Alternatively, you can build `glfw` from source code and put the library under `external/glfwlib` with
 
 ```bash
-$ git submodule update --init 3rd_party/glfw
+$ git submodule update --init external/glfw
 $ cd external/glfw
 $ cmake .
 $ cmake --build . --config Release
