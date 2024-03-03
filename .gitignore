@@ -1,3 +1,6 @@
+# Mac
+.DS_Store
+
 # Prerequisites
 *.d
 
@@ -51,10 +54,14 @@ out
 cmake-build-debug
 cmake-build-release
 
+# External Library
+
 external/glfwlib
+external/glfwbuild
+
 external/eigen-*
 external/eigenlib
-*.DS_Store  
+*.DS_Store 
 build
 
 */main_ans.cpp
@@ -69,3 +76,4 @@ build
 !assets/rb4.obj
 
 task09/cppmodule.cbp
+task00

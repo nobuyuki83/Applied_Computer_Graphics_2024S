@@ -1,123 +1,45 @@
 # How to Set Up GLFW Library
 
-GLFW is a library to open a window with OpenGL graphics visualization. 
+[GLFW](https://www.glfw.org/) is a library to open a window with OpenGL graphics visualization. 
 
 There are three ways to set up GLFW:  
-- using package manager (for Mac and Ubuntu)
-- download pre-build library (Mac and Windows)
-- build the source code (for all OSs)
+1. build from the [source code on GitHub](https://github.com/glfw/glfw)
+2. use package managers (apt-get, brew, vcpkg, etc)
+3. download pre-build binaries
 
-Below, we discuss these options in detail for each OS
+**This lecture only supports the first option (e.g., build from source code) because it is the most EDUCATIONAL.** Yet, you can choose the other options with your own responsibility. 
 
-----
-
-## Mac 
-
-### Install from Package Manager
-
-for Mac, install `glfw` using package manager `brew` as
+We will download the source code of GLFW library at `external/glfw`, build the library at `external/glfwbuild` and install it at `external/glfwlib`. First, take a look at the [compile manual of glfw](https://www.glfw.org/docs/3.3/compile.html).  Then, do the job with the following commands:
 
 ```bash
-$ brew install glfw
+$ git submodule update --init external/glfw # download source code
+$ cmake -S external/glfw -B external/glfwbuild # make build folder
+$ cd external/glfwbuild 
+$ cmake --build . --config Release # build inside build folder
+$ cmake --install . --prefix ../glfwlib # install at glfwlib folder
 ```
 
-### Download Pre-compiled Library
-
-Download the pre-compiled library (`glfw-3.*.*.bin.MACOS.zip`) from
-
- https://www.glfw.org/download.html
-
-Extract the compressed file and rename the folder as `glfwlib` and put it under the `external/` folder of the reository. 
-
 Make sure you have a header file `glfw3.h` at
-
 ```
 acg-<username>/external/glfwlib/include/GLFW/glfw3.h
 ```
 
-### Install from Source Code
 
-Alternatively, you can build `glfw` from source code and put the library under `external/glfwlib` with
 
-```bash
-$ git submodule update --init external/glfw
-$ cd external/glfw
-$ cmake .
-$ cmake --build . --config Release
-$ cmake --install . --prefix ../glfwlib
-```
+## Linux
 
-Make sure you have a header file `glfw3.h` at
-
-```
-acg-<username>/external/glfwlib/include/GLFW/glfw3.h
-```
-
-----
-## Ubuntu
-
-### Install from Package Manager
-
-For ubuntu, install `glfw` using `apt-get` as
+For Ubuntu, you may need to install dependencies before the installation. Use `apt-get` to install
 
 ```bash
-$ sudo apt-get install -y libx11-dev xorg-dev \
-                          libglu1-mesa libglu1-mesa-dev \
-                          libgl1-mesa-glx libgl1-mesa-dev
-$ sudo apt install -y libglfw3 libglfw3-dev
-$ sudo apt install -y libglew-dev
+$ sudo apt-get install -y xorg-dev
 ```
 
-### Build from Source Code
+for other unix-like OS, look at the [manual](https://www.glfw.org/docs/3.3/compile.html#compile_deps) to install dependencies. 
 
-Alternatively, you can build `glfw` from source code and put the library under `external/glfwlib` with
 
-```bash
-$ git submodule update --init external/glfw
-$ cd external/glfw
-$ cmake .
-$ cmake --build . --config Release
-$ cmake --install . --prefix ../glfwlib
-```
 
-Make sure you have a header file `glfw3.h` at
+## Tips
 
-```
-acg-<username>/external/glfwlib/include/GLFW/glfw3.h
-```
-
-----
-
-## Windows
-
-### Download Pre-compiled Library
-
-Download the pre-compiled library (`glfw-3.*.*.bin.WIN64.zip`) from
-
- https://www.glfw.org/download.html
-
-Extract the compressed file and rename the folder as `glfwlib` and put it under the `external/` folder of the reository. 
-
-Make sure you have a header file `glfw3.h` at
-
-```
-acg-<username>/external/glfwlib/include/GLFW/glfw3.h
-```
-
-### Build from Source Code
-
-Alternatively, you can build `glfw` from source code and put the library under `external/glfwlib` with
-
-```bash
-$ git submodule update --init external/glfw
-$ cd external/glfw
-$ cmake .
-$ cmake --build . --config Release
-$ cmake --install . --prefix ../external
-```
-
-Make sure you have a header file `glfw3.h` at
-
-```
-acg-<username>/external/glfwlib/include/GLFW/glfw3.h
-```
+* Why we make a folder (i.e., `glfwbuild`) just for building code? This is called ***out-of-source build*** and its a good practice for open source library.
+* Do not commit library intermediate files or library itself. Make sure you only commit the codes/file you edited. When you see a lot of files by typing `git status` or `git add .` something is wrong.
+* When things go out of your contrl, do it from scratch (e.g., `git clone https://github.com/ACG-2024S/acg-<username>.git`).
