@@ -4,9 +4,9 @@
 
 Lecture at graduate school of information science and technology in the university of Tokyo, spring semester, 2024
 
-ITC-LMS (for Slack and GitHub Classroom invitations): 
+UTOL (UTokyo-LMS) (for Slack and GitHub Classroom invitations): 
 
-- https://itc-lms.ecc.u-tokyo.ac.jp/lms/course?idnumber=20244860-10840F01
+- https://utol.ecc.u-tokyo.ac.jp/lms/course?idnumber=2024_4886_4860-1084_01
 
 
 ## Instructor
@@ -88,7 +88,7 @@ Look at the following document.
 - Do the assignment by yourself. Do not share the answers of the assignments.
 - Late submission of an assignment is subject to grade deduction.
 - Score each assignment will not be open soon (instructor needs to adjust weight of the score later).
-- The grading of the assignments might not be soon.
+- The assignments might not be graded soon.
 
 
 ## Slides
