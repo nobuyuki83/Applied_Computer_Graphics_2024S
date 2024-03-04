@@ -40,17 +40,17 @@ Topics:
 | Day | Topic | Assignment | Slide |
 |:----|:---|:---|:---|
 |(1)<br>Apr. 8| **Introduction**<br>**Rasterization in 2D** |  | [[3]](http://nobuyuki-umetani.com/acg2022s/graphics_pipeline.pdf) |
-|(2)<br>Apr. 15| **Parametric curves / surfaces** <br/>polynominal | task00 | [[4] ](http://nobuyuki-umetani.com/acg2022s/barycentric_coordinate.pdf), [[5]](http://nobuyuki-umetani.com/acg2022s/transformation.pdf) |
-|(3)<br>Apr. 22| **Coordinate transfrormation**<br/>Affine, homography transformation | task01 | - |
-|(5)<br>May 7| **Graphics Pipeline 1**<br>depth buffer method, shading | task02 |  [[6]](http://nobuyuki-umetani.com/acg2022s/rasterization.pdf) |
-|(4)<br>May 13| **Graphics Pipeline 2**<br>shadow, anti aliasing | task03 | [[7]](http://nobuyuki-umetani.com/acg2022s/implicit_modeling.pdf) |
-|(6)<br>May 20| **Ray Casting 1**<br/>spatial data structure | task04 | [[8]](http://nobuyuki-umetani.com/acg2022s/raycasting.pdf) |
-|(7)<br>May 27| **Ray Casting 2**<br>Rendering equation, Monte Carlo integration | task05 | [[9]](http://nobuyuki-umetani.com/acg2022s/curve.pdf)|
-|(8)<br>June 3| **Character animation**<br> Linear blend skinning | task06 | [[10]](http://nobuyuki-umetani.com/acg2022s/character_deformation.pdf), [[11]](http://nobuyuki-umetani.com/acg2022s/jacobian.pdf) |
+|(2)<br>Apr. 15| **Parametric curves / surfaces** <br/>polynominal | task01 | [[4] ](http://nobuyuki-umetani.com/acg2022s/barycentric_coordinate.pdf), [[5]](http://nobuyuki-umetani.com/acg2022s/transformation.pdf) |
+|(3)<br>Apr. 22| **Coordinate transfrormation**<br/>Affine, homography transformation | task02 | - |
+|(5)<br>May 7| **Graphics Pipeline 1**<br>depth buffer method, shading | task03 |  [[6]](http://nobuyuki-umetani.com/acg2022s/rasterization.pdf) |
+|(4)<br>May 13| **Graphics Pipeline 2**<br>shadow, anti aliasing | task04 | [[7]](http://nobuyuki-umetani.com/acg2022s/implicit_modeling.pdf) |
+|(6)<br>May 20| **Ray Casting 1**<br/>spatial data structure | task05 | [[8]](http://nobuyuki-umetani.com/acg2022s/raycasting.pdf) |
+|(7)<br>May 27| **Ray Casting 2**<br>Rendering equation, Monte Carlo integration | task06 | [[9]](http://nobuyuki-umetani.com/acg2022s/curve.pdf)|
+|(8)<br>June 3| **Character animation**<br> Linear blend skinning | task07 | [[10]](http://nobuyuki-umetani.com/acg2022s/character_deformation.pdf), [[11]](http://nobuyuki-umetani.com/acg2022s/jacobian.pdf) |
 |(9)<br>June 10| Guest lecture by Dr. Rex West |  | [[12]](http://nobuyuki-umetani.com/acg2022s/optimization.pdf) |
-|(10)<br>June 17| **Optimization** <br> Inverse kinematic | task07 | [[13]](http://nobuyuki-umetani.com/acg2022s/mesh_laplacian.pdf) |
-|(11)<br>June 24| Laplacian mesh deformation | task08 | - |
-|(12)<br>July 12| **Grid-based Fluid Ⅰ**<br> Poisson equation | task09 | [[14]](http://nobuyuki-umetani.com/acg2022s/pde.pdf) |
+|(10)<br>June 17| **Optimization** <br> Inverse kinematic | task08 | [[13]](http://nobuyuki-umetani.com/acg2022s/mesh_laplacian.pdf) |
+|(11)<br>June 24| Laplacian mesh deformation | task09 | - |
+|(12)<br>July 12| **Grid-based Fluid Ⅰ**<br> Poisson equation | task10 | [[14]](http://nobuyuki-umetani.com/acg2022s/pde.pdf) |
 |(13)<br>July 8| **Grid-based Fluid Ⅱ**<br> Stam fluid | - | [[15]](http://nobuyuki-umetani.com/acg2022s/fluid_simulation.pdf)  |
 
 
@@ -72,16 +72,16 @@ Look at the following document.
 
 | Task ID | Title | Thumbnail |
 |:---|:---|:---|
-| task00 | Rasterizing triangles and lines |  |
-| task01 | Rasterizing parametric curves |  |
-| task02 | GLSL vertex shader (Lidar simulator) |  |
-| task03 | GLSL fragment shader (analytic shadow) |  |
-| task04 | GLSL fragment Shader (Sphere Tracing / SDF) |   |
-| task05 | Importance Sampling (Ambient Occlusion) ||
-| task06 | Linear Blend Skinning (Articulated Rigid Body, Inverse Binding Matrix) ||
-| task07 | Inverse Kinematics (Levenberg–Marquardt method) |  |
-| task08 | Laplacian Mesh Deformation (Quadratic Programming, Sparse Matrix) |  |
-| task09 | Poisson Image Editing((Gauss-Seidel method, pybind11)) |  |
+| task01 | Rasterizing triangles and lines |  |
+| task02 | Rasterizing parametric curves |  |
+| task03 | GLSL vertex shader (Lidar simulator) |  |
+| task04 | GLSL fragment shader (analytic shadow) |  |
+| task05 | GLSL fragment Shader (Sphere Tracing / SDF) |   |
+| task06 | Importance Sampling (Ambient Occlusion) ||
+| task07 | Linear Blend Skinning (Articulated Rigid Body, Inverse Binding Matrix) ||
+| task08 | Inverse Kinematics (Levenberg–Marquardt method) |  |
+| task09 | Laplacian Mesh Deformation (Quadratic Programming, Sparse Matrix) |  |
+| task10 | Poisson Image Editing((Gauss-Seidel method, pybind11)) |  |
 
 ### Policy
 
