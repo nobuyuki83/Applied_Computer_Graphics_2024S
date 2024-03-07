@@ -20,7 +20,7 @@ jobs:
       run: |
         sudo apt install -y \
           libwayland-dev libxkbcommon-dev wayland-protocols extra-cmake-modules \
-          libxrandr-dev libxinerama-dev libxcursor-dev
+          libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev
         git submodule update --init -- external/glfw
         cmake -S external/glfw -B external/glfwbuild
         cd external/glfwbuild
