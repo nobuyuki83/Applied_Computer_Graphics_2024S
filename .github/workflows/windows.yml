@@ -1,0 +1,35 @@
+name: CI_Win
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main, task0, task00, task1, task01, task2, task02, task3, task03, task05, task5, task06, task6, task07, task7, task08, task8, task09, task9]
+
+env:
+  BUILD_TYPE: Debug
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: install glfw
+      run: |
+        git submodule update --init -- external/glfw
+        cmake -S external/glfw -B external/glfwbuild
+        cd external/glfwbuild
+        cmake --build . --config Release
+        cmake --install . --prefix ../glfwlib
+
+    - name: get eigen
+      run: |
+        git submodule update --init -- external/eigen
+
+    - name: build
+      run: |
+        cmake -S . -B build -A x64
+        cd build
+        cmake --build .
