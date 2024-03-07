@@ -31,7 +31,7 @@ acg-<username>/external/glfwlib/include/GLFW/glfw3.h
 For Ubuntu, you may need to install dependencies before the installation. Use `apt-get` to install
 
 ```bash
-$ sudo apt-get install -y xorg-dev
+$ sudo apt install libwayland-dev libxkbcommon-dev wayland-protocols extra-cmake-modules
 ```
 
 for other unix-like OS, look at the [manual](https://www.glfw.org/docs/3.3/compile.html#compile_deps) to install dependencies. 
