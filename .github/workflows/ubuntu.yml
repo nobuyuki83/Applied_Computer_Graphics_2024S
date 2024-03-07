@@ -18,7 +18,7 @@ jobs:
 
     - name: install glfw
       run: |
-        sudo apt install -y libwayland-dev libxkbcommon-dev wayland-protocols extra-cmake-modules libxrandr
+        sudo apt install -y libwayland-dev libxkbcommon-dev wayland-protocols extra-cmake-modules libxrandr-dev
         git submodule update --init -- external/glfw
         cmake -S external/glfw -B external/glfwbuild
         cd external/glfwbuild
