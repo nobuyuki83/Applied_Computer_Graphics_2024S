@@ -9,12 +9,15 @@ UTOL (UTokyo-LMS) (for Slack and GitHub Classroom invitations):
 - https://utol.ecc.u-tokyo.ac.jp/lms/course?idnumber=2024_4886_4860-1084_01
 
 
-## Instructor
+## Instructors
 
 Dr. Nobuyuki Umetani 
 - email: n.umetani@gmail.com
 - url: http://www.nobuyuki-umetani.com/
 - lab's web page: https://cgenglab.github.io/labpage/en/
+
+TA: Kenji Tojo
+- url: https://kenji-tojo.github.io/
 
 ## Time
 
@@ -39,19 +42,19 @@ Topics:
 
 | Day | Topic | Assignment | Slide |
 |:----|:---|:---|:---|
-|(1)<br>Apr. 8| **Introduction**<br>**Rasterization in 2D** |  | [[3]](http://nobuyuki-umetani.com/acg2022s/graphics_pipeline.pdf) |
-|(2)<br>Apr. 15| **Parametric curves / surfaces** <br/>polynominal | task01 | [[4] ](http://nobuyuki-umetani.com/acg2022s/barycentric_coordinate.pdf), [[5]](http://nobuyuki-umetani.com/acg2022s/transformation.pdf) |
+|(1)<br>Apr. 8| **Introduction**<br>**Rasterization in 2D**, DDA |  |  |
+|(2)<br>Apr. 15| **Parametric curves / surfaces** <br/>Bézier curve, polynominal | task01 |  |
 |(3)<br>Apr. 22| **Coordinate transfrormation**<br/>Affine, homography transformation | task02 | - |
-|(5)<br>May 7| **Graphics Pipeline 1**<br>depth buffer method, shading | task03 |  [[6]](http://nobuyuki-umetani.com/acg2022s/rasterization.pdf) |
-|(4)<br>May 13| **Graphics Pipeline 2**<br>shadow, anti aliasing | task04 | [[7]](http://nobuyuki-umetani.com/acg2022s/implicit_modeling.pdf) |
-|(6)<br>May 20| **Ray Casting 1**<br/>spatial data structure | task05 | [[8]](http://nobuyuki-umetani.com/acg2022s/raycasting.pdf) |
-|(7)<br>May 27| **Ray Casting 2**<br>Rendering equation, Monte Carlo integration | task06 | [[9]](http://nobuyuki-umetani.com/acg2022s/curve.pdf)|
-|(8)<br>June 3| **Character animation**<br> Linear blend skinning | task07 | [[10]](http://nobuyuki-umetani.com/acg2022s/character_deformation.pdf), [[11]](http://nobuyuki-umetani.com/acg2022s/jacobian.pdf) |
-|(9)<br>June 10| Guest lecture by Dr. Rex West |  | [[12]](http://nobuyuki-umetani.com/acg2022s/optimization.pdf) |
-|(10)<br>June 17| **Optimization** <br> Inverse kinematic | task08 | [[13]](http://nobuyuki-umetani.com/acg2022s/mesh_laplacian.pdf) |
+|(5)<br>May 7| **Graphics Pipeline 1**<br>depth buffer method, shading | task03 |  |
+|(4)<br>May 13| **Graphics Pipeline 2**<br>shadow, anti aliasing | task04 |  |
+|(6)<br>May 20| **Ray Casting 1**<br/>spatial data structure | task05 | |
+|(7)<br>May 27| **Ray Casting 2**<br>Rendering equation, Monte Carlo integration | task06 | |
+|(8)<br>June 3| **Character animation**<br> Linear blend skinning | task07 |  |
+|(9)<br>June 10| Guest lecture by Dr. Rex West |  |  |
+|(10)<br>June 17| **Optimization** <br> Inverse kinematic | task08 | |
 |(11)<br>June 24| Laplacian mesh deformation | task09 | - |
-|(12)<br>July 12| **Grid-based Fluid Ⅰ**<br> Poisson equation | task10 | [[14]](http://nobuyuki-umetani.com/acg2022s/pde.pdf) |
-|(13)<br>July 8| **Grid-based Fluid Ⅱ**<br> Stam fluid | - | [[15]](http://nobuyuki-umetani.com/acg2022s/fluid_simulation.pdf)  |
+|(12)<br>July 12| **Grid-based Fluid Ⅰ**<br> Poisson equation | task10 |  |
+|(13)<br>July 8| **Grid-based Fluid Ⅱ**<br> Stam fluid | - | |
 
 
 ## Grading
@@ -72,16 +75,16 @@ Look at the following document.
 
 | Task ID | Title | Thumbnail |
 |:---|:---|:---|
-| task01 | Rasterizing triangles and lines |  |
-| task02 | Rasterizing parametric curves |  |
-| task03 | GLSL vertex shader (Lidar simulator) |  |
-| task04 | GLSL fragment shader (analytic shadow) |  |
-| task05 | GLSL fragment Shader (Sphere Tracing / SDF) |   |
-| task06 | Importance Sampling (Ambient Occlusion) ||
-| task07 | Linear Blend Skinning (Articulated Rigid Body, Inverse Binding Matrix) ||
-| task08 | Inverse Kinematics (Levenberg–Marquardt method) |  |
-| task09 | Laplacian Mesh Deformation (Quadratic Programming, Sparse Matrix) |  |
-| task10 | Poisson Image Editing((Gauss-Seidel method, pybind11)) |  |
+| task01 | Rasterization of lines and polygons | <img src="task01/preview.png" width=100px> |
+| task02 | Rasterization of parametric curves | <img src="task02/preview.png" width=100px> |
+| task03 | TBD |  |
+| task04 | TBD |  |
+| task05 | TBD |   |
+| task06 | TBD ||
+| task07 | TBD ||
+| task08 | TBD |  |
+| task09 | TBD |  |
+| task10 | TBD |  |
 
 ### Policy
 
@@ -95,19 +98,6 @@ Look at the following document.
 
 - [[1] C++ programming](http://nobuyuki-umetani.com/acg2022s/cpp.pdf)
 - [[2] Git+GitHub](http://nobuyuki-umetani.com/acg2022s/git.pdf)
-- [[3] Graphics pipeline](http://nobuyuki-umetani.com/acg2022s/graphics_pipeline.pdf)
-- [[4] Barycentric coordinate](http://nobuyuki-umetani.com/acg2022s/barycentric_coordinate.pdf)
-- [[5] Coordinate transformation](http://nobuyuki-umetani.com/acg2022s/transformation.pdf)
-- [[6] Rasterization](http://nobuyuki-umetani.com/acg2022s/rasterization.pdf)
-- [[7] Implicit Modeling](http://nobuyuki-umetani.com/acg2022s/implicit_modeling.pdf)
-- [[8] Ray Casting](http://nobuyuki-umetani.com/acg2022s/raycasting.pdf)
-- [[9] Parametric Curve](http://nobuyuki-umetani.com/acg2022s/curve.pdf)
-- [[10] Character Deformation](http://nobuyuki-umetani.com/acg2022s/character_deformation.pdf)
-- [[11] Jacobian & Hessian](http://nobuyuki-umetani.com/acg2022s/jacobian.pdf)
-- [[12] Optimization](http://nobuyuki-umetani.com/acg2022s/optimization.pdf) 
-- [[13] Mesh Laplacian](http://nobuyuki-umetani.com/acg2022s/mesh_laplacian.pdf)
-- [[14] PDE](http://nobuyuki-umetani.com/acg2022s/pde.pdf) 
-- [[15] Grid-based Fluid](http://nobuyuki-umetani.com/acg2022s/fluid_simulation.pdf) 
 
 
 ## Reading Material

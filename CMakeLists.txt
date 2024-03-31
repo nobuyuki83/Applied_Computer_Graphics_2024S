@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.10)
 
 project(tasks)
 
-# add_subdirectory(task00)
 # add_subdirectory(task01)
 # add_subdirectory(task02)
 # add_subdirectory(task03)
