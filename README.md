@@ -77,7 +77,7 @@ Look at the following document.
 |:---|:---|:---|
 | task01 | Rasterization of lines and polygons | <img src="task01/preview.png" width=100px> |
 | task02 | Rasterization of parametric curves | <img src="task02/preview.png" width=100px> |
-| task03 | TBD |  |
+| task03 | Perspectively-correct Texture Mapping | <img src="task03/preview.png" width=100px> |
 | task04 | TBD |  |
 | task05 | TBD |   |
 | task06 | TBD ||
