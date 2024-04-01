@@ -42,19 +42,19 @@ Topics:
 
 | Day | Topic | Assignment | Slide |
 |:----|:---|:---|:---|
-|(1)<br>Apr. 8| **Introduction**<br>**Rasterization in 2D**, DDA |  |  |
-|(2)<br>Apr. 15| **Parametric curves / surfaces** <br/>Bézier curve, polynominal | task01 |  |
-|(3)<br>Apr. 22| **Coordinate transfrormation**<br/>Affine, homography transformation | task02 | - |
-|(5)<br>May 7| **Graphics Pipeline 1**<br>depth buffer method, shading | task03 |  |
-|(4)<br>May 13| **Graphics Pipeline 2**<br>shadow, anti aliasing | task04 |  |
+|(1)<br>Apr. 8| **Introduction**<br>**Rasterization in 2D**, Digital Differential Analyzer |  |  |
+|(2)<br>Apr. 15| **Parametric curves / surfaces** <br/>Bézier curve, polynominal | task01 |　|
+|(3)<br>Apr. 22| **Coordinate transfrormation**<br/>Affine, homography transformation | task02 | |
+|(5)<br>May 7| **Graphics Pipeline 1**<br>depth buffer method, shading | task03 | |
+|(4)<br>May 13| **Graphics Pipeline 2**<br>shadow, anti aliasing | task04 | |
 |(6)<br>May 20| **Ray Casting 1**<br/>spatial data structure | task05 | |
 |(7)<br>May 27| **Ray Casting 2**<br>Rendering equation, Monte Carlo integration | task06 | |
-|(8)<br>June 3| **Character animation**<br> Linear blend skinning | task07 |  |
-|(9)<br>June 10| Guest lecture by Dr. Rex West |  |  |
+|(8)<br>June 3| **Character animation**<br> Linear blend skinning | task07 | |
+|(9)<br>June 10| Guest lecture by Dr. Rex West |  | |
 |(10)<br>June 17| **Optimization** <br> Inverse kinematic | task08 | |
-|(11)<br>June 24| Laplacian mesh deformation | task09 | - |
+|(11)<br>June 24| Laplacian mesh deformation | task09 | |
 |(12)<br>July 12| **Grid-based Fluid Ⅰ**<br> Poisson equation | task10 |  |
-|(13)<br>July 8| **Grid-based Fluid Ⅱ**<br> Stam fluid | - | |
+|(13)<br>July 8| **Grid-based Fluid Ⅱ**<br> Stam fluid | | |
 
 
 ## Grading
@@ -79,9 +79,9 @@ Look at the following document.
 | task02 | Rasterization of parametric curves | <img src="task02/preview.png" width=100px> |
 | task03 | Perspectively-correct Texture Mapping | <img src="task03/preview.png" width=100px> |
 | task04 | TBD |  |
-| task05 | TBD |   |
-| task06 | TBD ||
-| task07 | TBD ||
+| task05 | TBD |  |
+| task06 | TBD |  |
+| task07 | TBD |  |
 | task08 | TBD |  |
 | task09 | TBD |  |
 | task10 | TBD |  |
