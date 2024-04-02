@@ -5,6 +5,7 @@
 #ifndef UTIL_OPENGL_H_
 #define UTIL_OPENGL_H_
 
+#include <iostream>
 #include <fstream>
 #include <vector>
 
