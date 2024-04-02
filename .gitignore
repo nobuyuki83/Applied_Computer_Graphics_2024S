@@ -68,12 +68,4 @@ build
 */shader_ans.vert
 */shader_ans.frag
 
-!assets/armadillo1.obj
-!assets/bunny.obj
-!assets/rb1.obj
-!assets/rb2.obj
-!assets/rb3.obj
-!assets/rb4.obj
-
-task09/cppmodule.cbp
-task00
+!assets/*
