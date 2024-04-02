@@ -4,7 +4,7 @@
 
 Lecture at graduate school of information science and technology in the university of Tokyo, spring semester, 2024
 
-UTOL (UTokyo-LMS) (for Slack and GitHub Classroom invitations): 
+UTOL (UTokyo-LMS) (for Zoom URL, Slack and GitHub Classroom invitations): 
 
 - https://utol.ecc.u-tokyo.ac.jp/lms/course?idnumber=2024_4886_4860-1084_01
 
@@ -75,10 +75,10 @@ Look at the following document.
 
 | Task ID | Title | Thumbnail |
 |:---|:---|:---|
-| task01 | Rasterization of lines and polygons | <img src="task01/preview.png" width=100px> |
-| task02 | Rasterization of parametric curves | <img src="task02/preview.png" width=100px> |
-| task03 | Perspectively-correct Texture Mapping | <img src="task03/preview.png" width=100px> |
-| task04 | TBD |  |
+| task01 | **Rasterization of lines and polygons**<br>DDA, winding number | <img src="task01/preview.png" width=100px> |
+| task02 | **Rasterization of parametric curves**<br> Quadratic Bézier curve, root of polynominal | <img src="task02/preview.png" width=100px> |
+| task03 | **Perspectively-correct texture mapping**<br>rasterization of triangle, barycentric coordinate | <img src="task03/preview.png" width=100px> |
+| task04 | **Vertex shader practice** <br>Rendering pipeline, mirror reflection, OpenGL | <img src="task04/preview.png" width=100px> |
 | task05 | TBD |  |
 | task06 | TBD |  |
 | task07 | TBD |  |
