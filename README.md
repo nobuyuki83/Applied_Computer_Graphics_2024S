@@ -110,5 +110,5 @@ Look at the following document.
 - [Skinning: Real-time Shape Deformation SIGGRAPH 2014 Course](https://skinning.org/)
 - [Physics-based Animation2023S (Another course by the instructor) ](https://github.com/nobuyuki83/Physics-based_Animation_2023S)
 - [Physics-based Animation2021S (Another course by the instructor) ](https://github.com/nobuyuki83/Physics-based_Animation_2021S)
-- [Applied Computer Graphics 2022S (The same course two years ago)](https://github.com/nobuyuki83/Physics-based_Animation_2023S)
+- [Applied Computer Graphics 2022S (The same course two years ago)](https://github.com/nobuyuki83/Applied_Computer_Graphics_2022S)
 
