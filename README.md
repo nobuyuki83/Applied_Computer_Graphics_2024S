@@ -42,7 +42,7 @@ Topics:
 
 | Day | Topic | Assignment | Slide |
 |:----|:---|:---|:---|
-|(1)<br>Apr. 8| **Introduction**<br>**Rasterization in 2D**, Digital Differential Analyzer |  |  |
+|(1)<br>Apr. 8| **Introduction**<br>**Rasterization in 2D**, Digital Differential Analyzer |  | [[1]](http://nobuyuki-umetani.com/acg2024s/introduction.pdf), [[4]](http://nobuyuki-umetani.com/acg2024s/digital_image.pdf) |
 |(2)<br>Apr. 15| **Parametric curves / surfaces** <br/>Bézier curve, polynominal | task01 |　|
 |(3)<br>Apr. 22| **Coordinate transfrormation**<br/>Affine, homography transformation | task02 | |
 |(5)<br>May 7| **Graphics Pipeline 1**<br>depth buffer method, shading | task03 | |
@@ -96,14 +96,19 @@ Look at the following document.
 
 ## Slides
 
-- [[1] C++ programming](http://nobuyuki-umetani.com/acg2022s/cpp.pdf)
-- [[2] Git+GitHub](http://nobuyuki-umetani.com/acg2022s/git.pdf)
+- [[1] Introduction](http://nobuyuki-umetani.com/acg2024s/introduction.pdf)
+- [[2] C++ programming](http://nobuyuki-umetani.com/acg2024s/cpp.pdf)
+- [[3] Git+GitHub](http://nobuyuki-umetani.com/acg2024s/git.pdf)
+- [[4] Digital Image](http://nobuyuki-umetani.com/acg2024s/digital_image.pdf)
+- [[5] Rasterization in 2D](http://nobuyuki-umetani.com/acg2024s/rasterization_2d.pdf)
 
 
 ## Reading Material
-- [Introduction to Computer Graphics by Cem Yuksel](https://www.youtube.com/watch?v=vLSphLtKQ0o&list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh)
+- Introduction to Computer Graphics by Cem Yuksel](https://www.youtube.com/watch?v=vLSphLtKQ0o&list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh)
 - [Scratchpixel 2.0](https://www.scratchapixel.com/)
 - [Awesome Computer Graphics (GitHub)](https://github.com/luisnts/awesome-computer-graphics)
 - [Skinning: Real-time Shape Deformation SIGGRAPH 2014 Course](https://skinning.org/)
-- [Physics-based Animation2022S (Another course by the instructor) ](https://github.com/nobuyuki83/Physics-based_Animation_2021S)
+- [Physics-based Animation2023S (Another course by the instructor) ](https://github.com/nobuyuki83/Physics-based_Animation_2023S)
+- [Physics-based Animation2021S (Another course by the instructor) ](https://github.com/nobuyuki83/Physics-based_Animation_2021S)
+- [Applied Computer Graphics 2022S (The same course two years ago)](https://github.com/nobuyuki83/Physics-based_Animation_2023S)
 
