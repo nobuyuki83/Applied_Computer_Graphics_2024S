@@ -83,7 +83,7 @@ Look at the following document.
 | task03 | **Perspectively-correct texture mapping**<br>rasterization of triangle, barycentric coordinate | <img src="task03/preview.png" width=100px> |
 | task04 | **Vertex shader practice** <br>Rendering pipeline, mirror reflection, OpenGL | <img src="task04/preview.png" width=100px> |
 | task05 | **Fragment shader practice**<br>Ray marching method, CSG modeling, implicit modeling | <img src="task05/preview.png" width=100px> |
-| task06 | TBD |  |
+| task06 | **Monte Carlo integration**<br>Multiple importance sampling, path tracing, rendering equation | <img src="task06/preview.png" width=100px> |
 | task07 | TBD |  |
 | task08 | TBD |  |
 | task09 | TBD |  |
