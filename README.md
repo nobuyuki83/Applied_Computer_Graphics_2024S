@@ -1,5 +1,8 @@
 # Applied Computer Graphics 4860-1084
 
+[![CI_Linux](https://github.com/ACG-2024S/acg/actions/workflows/ubuntu.yml/badge.svg)](https://github.com/ACG-2024S/acg/actions/workflows/ubuntu.yml)
+[![CI_Win](https://github.com/ACG-2024S/acg/actions/workflows/windows.yml/badge.svg)](https://github.com/ACG-2024S/acg/actions/workflows/windows.yml)
+
 ![teaser](doc/rep_image.png)
 
 Lecture at graduate school of information science and technology in the university of Tokyo, spring semester, 2024
