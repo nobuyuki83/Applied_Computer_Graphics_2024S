@@ -116,6 +116,6 @@ int main() {
   dda_line(50.0, 50.0, 50.0, 10.0, img_data, width, 0); // down
   // save gray scale image with 1 byte depth
   stbi_write_png(
-      (std::filesystem::path(PROJECT_SOURCE_DIR) / "output.png").c_str(),
+      (std::filesystem::path(PROJECT_SOURCE_DIR) / "output.png").string().c_str(),
       width, height, 1,img_data.data(), width);
 }
