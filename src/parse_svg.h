@@ -11,7 +11,6 @@
 #include <sstream>
 #include <optional>
 #include <map>
-#include <filesystem>
 #include <iostream>
 //
 #include "Eigen/Dense"
@@ -254,14 +253,14 @@ std::vector<std::vector<Edge>> svg_loops_from_outline_path(
       pos_cur = pos_cur + Eigen::Vector2f(std::stof(strs[is + 0]), std::stof(strs[is + 1]));
       for (; is += 2;) {
         if (isalpha(strs[is][0])) { break; }
-        auto p1 = pos_cur + Eigen::Vector2f(std::stof(strs[is + 0]), std::stof(strs[is + 1]));
+        Eigen::Vector2f p1 = pos_cur + Eigen::Vector2f(std::stof(strs[is + 0]), std::stof(strs[is + 1]));
         edges_buffer.emplace_back(pos_cur, p1);
         pos_cur = p1;
       }
     } else if (strs[is] == "l") { // line relative
       ++is;
       for (;;) {
-        auto p1 = pos_cur + Eigen::Vector2f(std::stof(strs[is + 0]), std::stof(strs[is + 1]));
+        Eigen::Vector2f p1 = pos_cur + Eigen::Vector2f(std::stof(strs[is + 0]), std::stof(strs[is + 1]));
         edges_buffer.emplace_back(pos_cur, p1);
         pos_cur = p1;
         is += 2;
@@ -270,37 +269,39 @@ std::vector<std::vector<Edge>> svg_loops_from_outline_path(
     } else if (strs[is] == "L") { // line absolute
       ++is;
       for (;;) {
-        auto p1 = Eigen::Vector2f(std::stof(strs[is + 0]), std::stof(strs[is + 1]));
+        Eigen::Vector2f p1 = Eigen::Vector2f(std::stof(strs[is + 0]), std::stof(strs[is + 1]));
         edges_buffer.emplace_back(pos_cur, p1);
         pos_cur = p1;
         is += 2;
         if (isalpha(strs[is][0])) { break; }
       }
     } else if (strs[is] == "v") { // vertical relative
-      auto p1 = pos_cur + Eigen::Vector2f(0., std::stof(strs[is + 1]));
+      Eigen::Vector2f p1 = pos_cur + Eigen::Vector2f(0., std::stof(strs[is + 1]));
       edges_buffer.emplace_back(pos_cur, p1);
       pos_cur = p1;
       is += 2;
     } else if (strs[is] == "V") { // vertical absolute
-      auto p1 = Eigen::Vector2f(pos_cur[0], std::stof(strs[is + 1]));
+      Eigen::Vector2f p1 = Eigen::Vector2f(pos_cur[0], std::stof(strs[is + 1]));
       edges_buffer.emplace_back(pos_cur, p1);
       pos_cur = p1;
       is += 2;
     } else if (strs[is] == "H") { // horizontal absolute
-      auto p1 = Eigen::Vector2f(std::stof(strs[is + 1]), pos_cur[1]);
+      Eigen::Vector2f p1 = Eigen::Vector2f(std::stof(strs[is + 1]), pos_cur[1]);
       edges_buffer.emplace_back(pos_cur, p1);
       pos_cur = p1;
       is += 2;
     } else if (strs[is] == "h") { // horizontal relative
-      auto p1 = pos_cur + Eigen::Vector2f(std::stof(strs[is + 1]), 0.);
+      float dh = std::stof(strs[is + 1]);
+      Eigen::Vector2f p1 = pos_cur + Eigen::Vector2f(dh, 0.);
+      // std::cout << "  " << dh << " " << pos_cur.x() << " " << pos_cur.y() << "   " << p1.x() << " " << p1.y() << std::endl;
       edges_buffer.emplace_back(pos_cur, p1);
       pos_cur = p1;
       is += 2;
     } else if (strs[is] == "q") {  // relative
       is++;
       for (;;) { // loop for poly-Bezeir curve
-        auto pm0 = pos_cur + Eigen::Vector2f(std::stof(strs[is + 0]), std::stof(strs[is + 1]));
-        auto p1 = pos_cur + Eigen::Vector2f(std::stof(strs[is + 2]), std::stof(strs[is + 3]));
+        Eigen::Vector2f pm0 = pos_cur + Eigen::Vector2f(std::stof(strs[is + 0]), std::stof(strs[is + 1]));
+        Eigen::Vector2f p1 = pos_cur + Eigen::Vector2f(std::stof(strs[is + 2]), std::stof(strs[is + 3]));
         edges_buffer.emplace_back(pos_cur, pm0, p1);
         pos_cur = p1;
         is += 4;
@@ -309,8 +310,8 @@ std::vector<std::vector<Edge>> svg_loops_from_outline_path(
     } else if (strs[is] == "Q") { // absolute
       is++;
       for (;;) { // loop for poly-Bezeir curve
-        auto pm0 = Eigen::Vector2f(std::stof(strs[is + 0]), std::stof(strs[is + 1]));
-        auto p1 = Eigen::Vector2f(std::stof(strs[is + 2]), std::stof(strs[is + 3]));
+        const Eigen::Vector2f pm0 = Eigen::Vector2f(std::stof(strs[is + 0]), std::stof(strs[is + 1]));
+        const Eigen::Vector2f p1 = Eigen::Vector2f(std::stof(strs[is + 2]), std::stof(strs[is + 3]));
         edges_buffer.emplace_back(pos_cur, pm0, p1);
         pos_cur = p1;
         is += 4;
