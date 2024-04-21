@@ -48,6 +48,7 @@ CMakeFiles
 cmake_install.cmake
 Makefile
 out
+CaMakeCache.txt
 
 # CLion
 .idea
@@ -69,3 +70,5 @@ build
 */shader_ans.frag
 
 !asset/armadillo.obj
+
+venv
