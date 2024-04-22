@@ -41,9 +41,12 @@ int number_of_intersection_ray_against_edge(
   auto a = area(org, org + dir, ps);
   auto b = area(org, pe, org + dir);
   auto c = area(org, ps, pe);
-  auto d = area(org + dir, ps, pe);
-  if (a * b > 0.f && d * c > 0.f && fabs(d) > fabs(c)) { return 1; }
+  auto d = area(dir+ps, ps, pe);
+  if (a * b > 0.f && d * c < 0.f) { return 1; }
   return 0;
+  // the following code was a bug
+  //auto d = area(org + dir, ps, pe);
+  //if (a * b > 0.f && d * c > 0.f && fabs(d) > fabs(c)) { return 1; }
 }
 
 /***
