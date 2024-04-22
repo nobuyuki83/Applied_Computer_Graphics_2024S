@@ -45,9 +45,9 @@ Topics:
 
 | Day | Topic | Assignment | Slide |
 |:----|:---|:---|:---|
-|(1)<br>Apr. 8| **Introduction**<br>**Rasterization in 2D**, Digital Differential Analyzer |  | [[1]](http://nobuyuki-umetani.com/acg2024s/introduction.pdf), [[4]](http://nobuyuki-umetani.com/acg2024s/digital_image.pdf) |
-|(2)<br>Apr. 15| **Parametric curves / surfaces** <br/>Bézier curve, polynominal | [task01](task01) | [[5]](http://nobuyuki-umetani.com/acg2024s/rasterization_2d.pdf) [[6]](http://nobuyuki-umetani.com/acg2024s/barycentric_coordinates.pdf) |
-|(3)<br>Apr. 22| **Coordinate transfrormation**<br/>Affine, homography transformation | task02 | |
+|(1)<br>Apr. 8| **Introduction**<br>Didigital image |  | [[1]](http://nobuyuki-umetani.com/acg2024s/introduction.pdf), [[4]](http://nobuyuki-umetani.com/acg2024s/digital_image.pdf) |
+|(2)<br>Apr. 15| **Parametric curves / surfaces** <br/>**Rasterization in 2D**, Digital Differential Analyzer | [task01](task01) | [[5]](http://nobuyuki-umetani.com/acg2024s/rasterization_2d.pdf) [[6]](http://nobuyuki-umetani.com/acg2024s/barycentric_coordinates.pdf) |
+|(3)<br>Apr. 22| **Coordinate transfrormation**<br/>Bézier curve, polynominal, Affine, homography transformation | [task02](task02) | [[7] ](http://nobuyuki-umetani.com/acg2024s/parametric_curve.pdf) [[8]](http://nobuyuki-umetani.com/acg2024s/polynominal.pdf) |
 |(5)<br>May 7| **Graphics Pipeline 1**<br>depth buffer method, shading | task03 | |
 |(4)<br>May 13| **Graphics Pipeline 2**<br>shadow, anti aliasing | task04 | |
 |(6)<br>May 20| **Ray Casting 1**<br/>spatial data structure | task05 | |
@@ -79,7 +79,7 @@ Look at the following document.
 | Task ID | Title | Thumbnail |
 |:---|:---|:---|
 | [task01](task01) | **Rasterization of lines and polygons**<br>DDA, winding number | <img src="task01/preview.png" width=100px> |
-| task02 | **Rasterization of parametric curves**<br> Quadratic Bézier curve, root of polynominal | <img src="task02/preview.png" width=100px> |
+| [task02](task02) | **Rasterization of parametric curves**<br> Quadratic Bézier curve, root of polynominal | <img src="task02/preview.png" width=100px> |
 | task03 | **Perspectively-correct texture mapping**<br>rasterization of triangle, barycentric coordinate | <img src="task03/preview.png" width=100px> |
 | task04 | **Vertex shader practice** <br>Rendering pipeline, mirror reflection, OpenGL | <img src="task04/preview.png" width=100px> |
 | task05 | **Fragment shader practice**<br>Ray marching method, CSG modeling, implicit modeling | <img src="task05/preview.png" width=100px> |
@@ -106,6 +106,8 @@ Look at the following document.
 - [[5] Rasterization in 2D](http://nobuyuki-umetani.com/acg2024s/rasterization_2d.pdf)
 - [[6] Barycentric Coordinates](http://nobuyuki-umetani.com/acg2024s/barycentric_coordinates.pdf)
 - [[7] Parametric Curve](http://nobuyuki-umetani.com/acg2024s/parametric_curve.pdf)
+- [[8] Polynominal Root finding](http://nobuyuki-umetani.com/acg2024s/polynominal.pdf)
+- [[9] Coordinate Transformation](http://nobuyuki-umetani.com/acg2024s/transformation.pdf)
 
 
 ## Reading Material
