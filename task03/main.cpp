@@ -90,7 +90,7 @@ int main() {
   { // read texture image
     int bitdepth0;
     const auto input_tex_path = std::filesystem::path(PROJECT_SOURCE_DIR) / ".." / "asset" / "uv.png";
-    unsigned char *ptr = stbi_load(input_tex_path.c_str(), &width_tex, &height_tex, &bitdepth0, 0);
+    unsigned char *ptr = stbi_load(input_tex_path.string().c_str(), &width_tex, &height_tex, &bitdepth0, 0);
     img_data_tex = std::vector<unsigned char>(ptr, ptr + width_tex * height_tex * bitdepth0);
     free(ptr);
   }
