@@ -47,9 +47,9 @@ Topics:
 |:----|:---|:---|:---|
 |(1)<br>Apr. 8| **Introduction**<br>Didigital image |  | [[1]](http://nobuyuki-umetani.com/acg2024s/introduction.pdf), [[4]](http://nobuyuki-umetani.com/acg2024s/digital_image.pdf) |
 |(2)<br>Apr. 15| **Parametric curves / surfaces** <br/>**Rasterization in 2D**, Digital Differential Analyzer | [task01](task01) | [[5]](http://nobuyuki-umetani.com/acg2024s/rasterization_2d.pdf) [[6]](http://nobuyuki-umetani.com/acg2024s/barycentric_coordinates.pdf) |
-|(3)<br>Apr. 22| **Coordinate transfrormation**<br/>Bézier curve, polynominal, Affine, homography transformation | [task02](task02) | [[7] ](http://nobuyuki-umetani.com/acg2024s/parametric_curve.pdf) [[8]](http://nobuyuki-umetani.com/acg2024s/polynominal.pdf) |
-|(5)<br>May 7| **Graphics Pipeline 1**<br>depth buffer method, shading | task03 | |
-|(4)<br>May 13| **Graphics Pipeline 2**<br>shadow, anti aliasing | task04 | |
+|(3)<br>Apr. 22| **Parametric representation**<br/>Bézier curve, polynominal | [task02](task02) | [[7] ](http://nobuyuki-umetani.com/acg2024s/parametric_curve.pdf) [[8]](http://nobuyuki-umetani.com/acg2024s/polynominal.pdf) |
+|(5)<br>May 7| **Coordinate transformation**<br>Affine, homography transformation | [task03](task03) | | 
+|(4)<br>May 13| **Graphics pipeline**<br>depth buffer method, shading, shadow, anti aliasing | task04 | |
 |(6)<br>May 20| **Ray Casting 1**<br/>spatial data structure | task05 | |
 |(7)<br>May 27| **Ray Casting 2**<br>Rendering equation, Monte Carlo integration | task06 | |
 |(8)<br>June 3| **Character animation**<br> Linear blend skinning | task07 | |
@@ -80,12 +80,12 @@ Look at the following document.
 |:---|:---|:---|
 | [task01](task01) | **Rasterization of lines and polygons**<br>DDA, winding number | <img src="task01/preview.png" width=100px> |
 | [task02](task02) | **Rasterization of parametric curves**<br> Quadratic Bézier curve, root of polynominal | <img src="task02/preview.png" width=100px> |
-| task03 | **Perspectively-correct texture mapping**<br>rasterization of triangle, barycentric coordinate | <img src="task03/preview.png" width=100px> |
+| [task03](task03) | **Perspectively-correct texture mapping**<br>rasterization of triangle, barycentric coordinate | <img src="task03/preview.png" width=100px> |
 | task04 | **Vertex shader practice** <br>Rendering pipeline, mirror reflection, OpenGL | <img src="task04/preview.png" width=100px> |
 | task05 | **Fragment shader practice**<br>Ray marching method, CSG modeling, implicit modeling | <img src="task05/preview.png" width=100px> |
 | task06 | **Monte Carlo integration**<br>Multiple importance sampling, path tracing, rendering equation | <img src="task06/preview.png" width=100px> |
 | task07 | TBD |  |
-| task08 | TBD |  |
+| task08 | **Skeletal Character Animation**<br>Linear blend skinning, articulated rigid body | <img src="task08/preview.png" width=100px> |
 | task09 | TBD |  |
 | task10 | TBD |  |
 
