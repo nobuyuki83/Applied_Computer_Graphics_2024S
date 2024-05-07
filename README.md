@@ -48,7 +48,7 @@ Topics:
 |(1)<br>Apr. 8| **Introduction**<br>Didigital image |  | [[1]](http://nobuyuki-umetani.com/acg2024s/introduction.pdf), [[4]](http://nobuyuki-umetani.com/acg2024s/digital_image.pdf) |
 |(2)<br>Apr. 15| **Parametric curves / surfaces** <br/>**Rasterization in 2D**, Digital Differential Analyzer | [task01](task01) | [[5]](http://nobuyuki-umetani.com/acg2024s/rasterization_2d.pdf) [[6]](http://nobuyuki-umetani.com/acg2024s/barycentric_coordinates.pdf) |
 |(3)<br>Apr. 22| **Parametric representation**<br/>Bézier curve, polynominal | [task02](task02) | [[7] ](http://nobuyuki-umetani.com/acg2024s/parametric_curve.pdf) [[8]](http://nobuyuki-umetani.com/acg2024s/polynominal.pdf) |
-|(5)<br>May 7| **Coordinate transformation**<br>Affine, homography transformation | [task03](task03) | | 
+|(5)<br>May 7| **Coordinate transformation**<br>Affine, homography transformation | [task03](task03) | [[9]](http://nobuyuki-umetani.com/acg2024s/transformation.pdf) [[10]](http://nobuyuki-umetani.com/acg2024s/transformation_homogeneous_2d.pdf) [[11]](http://nobuyuki-umetani.com/acg2024s/transformation_homogeneous_3d.pdf) |
 |(4)<br>May 13| **Graphics pipeline**<br>depth buffer method, shading, shadow, anti aliasing | task04 | |
 |(6)<br>May 20| **Ray Casting 1**<br/>spatial data structure | task05 | |
 |(7)<br>May 27| **Ray Casting 2**<br>Rendering equation, Monte Carlo integration | task06 | |
@@ -108,6 +108,9 @@ Look at the following document.
 - [[7] Parametric Curve](http://nobuyuki-umetani.com/acg2024s/parametric_curve.pdf)
 - [[8] Polynominal Root finding](http://nobuyuki-umetani.com/acg2024s/polynominal.pdf)
 - [[9] Coordinate Transformation](http://nobuyuki-umetani.com/acg2024s/transformation.pdf)
+- [[10] 2D Homogeneous Transformation](http://nobuyuki-umetani.com/acg2024s/transformation_homogeneous_2d.pdf)
+- [[11] 3D Homogeneous Transformation](http://nobuyuki-umetani.com/acg2024s/transformation_homogeneous_3d.pdf)
+- [[11] 3D Rasterization](http://nobuyuki-umetani.com/acg2024s/rasterization_3d.pdf)
 
 
 ## Reading Material
