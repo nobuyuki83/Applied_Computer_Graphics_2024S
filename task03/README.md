@@ -46,7 +46,7 @@ Now you are ready to go!
 Compile the code with **out-of-source build** by making a new directory for build task02/build and compile inside that directory
 
 ``` bash
-$ cd task03  # you are in "acg-<username>/task02" directory
+$ cd task03  # you are in "acg-<username>/task03" directory
 $ mkdir build
 $ cd build
 $ cmake -DCMAKE_BUILD_TYPE=Release .. # configure Release mode for fast execution

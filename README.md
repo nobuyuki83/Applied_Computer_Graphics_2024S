@@ -24,7 +24,7 @@ TA: Kenji Tojo
 
 ## Time
 
-Monday 2rd period, 10:25am - 12:10pm
+Monday 2nd period, 10:25am - 12:10pm
 
 
 ## Course Description
