@@ -12,8 +12,8 @@
 namespace acg {
 
 std::string load_file_as_string(
-    const std::string &fname) {
-  std::ifstream inputFile1(fname.c_str());
+    const char* fname) {
+  std::ifstream inputFile1(fname);
   std::istreambuf_iterator<char> vdataBegin(inputFile1);
   std::istreambuf_iterator<char> vdataEnd;
   return {vdataBegin, vdataEnd};

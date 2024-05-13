@@ -69,10 +69,10 @@ int main() {
 
   int shaderProgram;
   { // compile shader program
-    std::string vrt_path = std::filesystem::path(PROJECT_SOURCE_DIR) / "shader.vert";
-    std::string frg_path = std::filesystem::path(PROJECT_SOURCE_DIR) / "shader.frag";
-    std::string vrt = acg::load_file_as_string(vrt_path); // read source code of vertex shader program
-    std::string frg = acg::load_file_as_string(frg_path); // read source code of fragment shader program
+    const auto vrt_path = std::filesystem::path(PROJECT_SOURCE_DIR) / "shader.vert";
+    const auto frg_path = std::filesystem::path(PROJECT_SOURCE_DIR) / "shader.frag";
+    std::string vrt = acg::load_file_as_string(vrt_path.string().c_str()); // read source code of vertex shader program
+    std::string frg = acg::load_file_as_string(frg_path.string().c_str()); // read source code of fragment shader program
     shaderProgram = acg::create_shader_program(vrt, frg); // compile the shader on GPU
   }
   ::glUseProgram(shaderProgram); // use the shader program
