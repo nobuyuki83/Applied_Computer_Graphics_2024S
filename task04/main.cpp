@@ -6,6 +6,10 @@
 //
 #include "../src/util_opengl.h"
 #include "../src/util_triangle_mesh.h"
+//
+#ifndef  M_PI
+#define  M_PI  3.1415926535897932384626433
+#endif
 
 /***
  * draw triangle mesh
@@ -34,7 +38,7 @@ void draw(
 
 int main() {
   const auto file_path = std::filesystem::path(PROJECT_SOURCE_DIR) / ".." / "asset" / "armadillo.obj";
-  auto[tri2vtx, vtx2xyz] = acg::read_wavefrontobj_as_3d_triangle_mesh(file_path);
+  auto[tri2vtx, vtx2xyz] = acg::read_wavefrontobj_as_3d_triangle_mesh(file_path.string().c_str());
   // bounding box
   auto aabb_max = vtx2xyz.rowwise().maxCoeff();
   auto aabb_min = vtx2xyz.rowwise().minCoeff();

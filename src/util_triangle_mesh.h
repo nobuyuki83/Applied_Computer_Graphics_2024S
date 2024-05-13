@@ -16,7 +16,7 @@
 namespace acg {
 
 auto read_wavefrontobj_as_3d_triangle_mesh(
-    const std::filesystem::path &file_path)
+    const char* file_path)
 -> std::tuple<Eigen::Matrix<unsigned int, 3, Eigen::Dynamic>, Eigen::Matrix3Xf> {
   using myMatrix3Xui = Eigen::Matrix<unsigned int, 3, Eigen::Dynamic>;
   std::ifstream fin;
