@@ -17,13 +17,13 @@ jobs:
     - uses: actions/checkout@v2
 
 
-    #- name: install glfw
-    #  run: |
-    #    git submodule update --init -- external/glfw
-    #    cmake -S external/glfw -B external/glfwbuild
-    #    cd external/glfwbuild
-    #    cmake --build . --config Release
-    #    cmake --install . --prefix ../glfwlib
+    - name: install glfw
+      run: |
+        git submodule update --init -- external/glfw
+        cmake -S external/glfw -B external/glfwbuild
+        cd external/glfwbuild
+        cmake --build . --config Release
+        cmake --install . --prefix ../glfwlib
 
     - name: get eigen
       run: |
