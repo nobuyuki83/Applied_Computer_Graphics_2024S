@@ -50,8 +50,8 @@ Topics:
 |(3)<br>Apr. 22| **Parametric representation**<br/>Bézier curve, polynominal | [task02](task02) | [[7] ](http://nobuyuki-umetani.com/acg2024s/parametric_curve.pdf) [[8]](http://nobuyuki-umetani.com/acg2024s/polynominal.pdf) |
 |(5)<br>May 7| **Coordinate transformation**<br>Affine, homography transformation | [task03](task03) | [[9]](http://nobuyuki-umetani.com/acg2024s/transformation.pdf) [[10]](http://nobuyuki-umetani.com/acg2024s/transformation_homogeneous_2d.pdf) [[11]](http://nobuyuki-umetani.com/acg2024s/transformation_homogeneous_3d.pdf) |
 |(4)<br>May 13| **Graphics pipeline**<br>depth buffer method, shading, shadow, anti aliasing | [task04](task04) | [[12]](http://nobuyuki-umetani.com/acg2024s/rasterization_3d.pdf) [[13]](http://nobuyuki-umetani.com/acg2024s/graphics_pipeline.pdf)  |
-|(6)<br>May 20| **Ray Casting 1**<br/>spatial data structure | [task05](task05) | [[14]](http://nobuyuki-umetani.com/acg2024s/shading.pdf) [[15]](http://nobuyuki-umetani.com/acg2024s/rasterization_subpixel.pdf) [[16]](http://nobuyuki-umetani.com/acg2024s/implicit_modeling.pdf) |
-|(7)<br>May 27| **Ray Casting 2**<br>Rendering equation, Monte Carlo integration | task06 | |
+|(6)<br>May 20| **Ray Casting 1**<br/>spatial data structure | [task05](task05) | [[14]](http://nobuyuki-umetani.com/acg2024s/shading.pdf)  [[16]](http://nobuyuki-umetani.com/acg2024s/implicit_modeling.pdf) |
+|(7)<br>May 27| **Ray Casting 2**<br>Rendering equation, Monte Carlo integration | [task06](task06) | [[15]](http://nobuyuki-umetani.com/acg2024s/rasterization_subpixel.pdf)   [[17]](http://nobuyuki-umetani.com/acg2024s/ray_casting.pdf) [[18]](http://nobuyuki-umetani.com/acg2024s/monte_carlo_integration.pdf) [[19]](http://nobuyuki-umetani.com/acg2024s/ray_triangle_collision.pdf) |
 |(8)<br>June 3| **Character animation**<br> Linear blend skinning | task07 | |
 |(9)<br>June 10| Guest lecture by Dr. Rex West |  | |
 |(10)<br>June 17| **Optimization** <br> Inverse kinematic | task08 | |
@@ -83,8 +83,8 @@ Look at the following document.
 | [task03](task03) | **Perspectively-correct texture mapping**<br>rasterization of triangle, barycentric coordinate | <img src="task03/preview.png" width=100px> |
 | [task04](task04) | **Vertex shader practice** <br>Rendering pipeline, mirror reflection, OpenGL | <img src="task04/preview.png" width=100px> |
 | [task05](task05) | **Fragment shader practice**<br>Ray marching method, CSG modeling, implicit modeling | <img src="task05/preview.png" width=100px> |
-| task06 | **Monte Carlo integration**<br>Multiple importance sampling, path tracing, rendering equation | <img src="task06/preview.png" width=100px> |
-| task07 | TBD |  |
+| [task06](task06) | **Monte Carlo integration1**<br>Ambient occlusion, importance sampling, BVH | <img src="task06/preview.png" width=100px> |
+| task07 | **Monte Carlo integration2**<br/>Multiple importance sampling | <img src="task07/preview.png" width=100px> |
 | task08 | **Skeletal Character Animation**<br>Linear blend skinning, articulated rigid body | <img src="task08/preview.png" width=100px> |
 | task09 | TBD |  |
 | task10 | TBD |  |
@@ -100,21 +100,44 @@ Look at the following document.
 ## Slides
 
 - [[1] Introduction](http://nobuyuki-umetani.com/acg2024s/introduction.pdf)
+
 - [[2] C++ programming](http://nobuyuki-umetani.com/acg2024s/cpp.pdf)
+
 - [[3] Git+GitHub](http://nobuyuki-umetani.com/acg2024s/git.pdf)
+
 - [[4] Digital Image](http://nobuyuki-umetani.com/acg2024s/digital_image.pdf)
+
 - [[5] Rasterization in 2D](http://nobuyuki-umetani.com/acg2024s/rasterization_2d.pdf)
+
 - [[6] Barycentric Coordinates](http://nobuyuki-umetani.com/acg2024s/barycentric_coordinates.pdf)
+
 - [[7] Parametric Curve](http://nobuyuki-umetani.com/acg2024s/parametric_curve.pdf)
+
 - [[8] Polynominal Root finding](http://nobuyuki-umetani.com/acg2024s/polynominal.pdf)
+
 - [[9] Coordinate Transformation](http://nobuyuki-umetani.com/acg2024s/transformation.pdf)
+
 - [[10] 2D Homogeneous Transformation](http://nobuyuki-umetani.com/acg2024s/transformation_homogeneous_2d.pdf)
+
 - [[11] 3D Homogeneous Transformation](http://nobuyuki-umetani.com/acg2024s/transformation_homogeneous_3d.pdf)
+
 - [[12] 3D Rasterization](http://nobuyuki-umetani.com/acg2024s/rasterization_3d.pdf)
+
 - [[13] Graphics Pipeline](http://nobuyuki-umetani.com/acg2024s/graphics_pipeline.pdf)
+
 - [[14] Shading](http://nobuyuki-umetani.com/acg2024s/shading.pdf)
+
 - [[15] Subpixel Effect](http://nobuyuki-umetani.com/acg2024s/rasterization_subpixel.pdf)
+
 - [[16] Implicit Modeling](http://nobuyuki-umetani.com/acg2024s/implicit_modeling.pdf)
+
+- [[17]Ray Casting](http://nobuyuki-umetani.com/acg2024s/ray_casting.pdf)
+
+- [[18]Monte Carlo Integration](http://nobuyuki-umetani.com/acg2024s/monte_carlo_integration.pdf)
+
+- [[19]Ray Triangle Collision](http://nobuyuki-umetani.com/acg2024s/ray_triangle_collision.pdf)
+
+  
 
 
 
