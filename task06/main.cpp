@@ -234,9 +234,9 @@ int main() {
   {
     std::vector<unsigned char> img_data_uchar(img_width * img_height * 3, 0);
     for (unsigned int i = 0; i < img_width * img_height; ++i) {
-      img_data_uchar[i * 3 + 0] = img_data_nrm[i * 3 + 0] * 255.f;
-      img_data_uchar[i * 3 + 1] = img_data_nrm[i * 3 + 1] * 255.f;
-      img_data_uchar[i * 3 + 2] = img_data_nrm[i * 3 + 2] * 255.f;
+      img_data_uchar[i * 3 + 0] = static_cast<unsigned char>(img_data_nrm[i * 3 + 0] * 255.f);
+      img_data_uchar[i * 3 + 1] = static_cast<unsigned char>(img_data_nrm[i * 3 + 1] * 255.f);
+      img_data_uchar[i * 3 + 2] = static_cast<unsigned char>(img_data_nrm[i * 3 + 2] * 255.f);
     }
     stbi_write_png(
         (std::filesystem::path(PROJECT_SOURCE_DIR) / "normal_map.png").string().c_str(),
@@ -245,7 +245,7 @@ int main() {
   {
     std::vector<unsigned char> img_data_uchar(img_width * img_height, 0);
     for (unsigned int i = 0; i < img_width * img_height; ++i) {
-      img_data_uchar[i] = img_data_ao[i] * 255.f;
+      img_data_uchar[i] = static_cast<unsigned char>(img_data_ao[i] * 255.f);
     }
     stbi_write_png(
         (std::filesystem::path(PROJECT_SOURCE_DIR) / "ao.png").string().c_str(),
