@@ -15,6 +15,9 @@
 #define M_PI 3.14159265358979323846
 #endif
 
+#include <random>
+std::mt19937 rndeng(std::random_device{}());
+
 /**
  * Rotation matrix such that z-axis will be direction of `nrm`
  * @param nrm transfromed z-axis
@@ -37,7 +40,9 @@ auto local_to_world_vector_transformation(
  */
 auto sample_hemisphere(
     const Eigen::Vector3f &nrm) -> std::pair<Eigen::Vector3f, float> {
-  const auto unirand = Eigen::Vector2f::Random() * 0.5f + Eigen::Vector2f(0.5, 0.5);
+  // const auto unirand = Eigen::Vector2f::Random() * 0.5f + Eigen::Vector2f(0.5, 0.5);
+  auto dist_01 = std::uniform_real_distribution<float>(0.f, 1.f);
+  const auto unirand = Eigen::Vector2f(dist_01(rndeng),dist_01(rndeng));
   const float phi = 2.f * float(M_PI) * unirand.y();
 
   // the code to uniformly sample hemisphere (z-up)
