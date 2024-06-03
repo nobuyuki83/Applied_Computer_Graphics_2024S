@@ -3,6 +3,8 @@
 #include <limits>
 #include <tuple>
 #include <random>
+#include <optional>
+#include <cmath>
 //
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
