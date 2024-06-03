@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED TRUE)  # we are using STL library
 #############################
 # set project name
 
-project(task06)
+project(task07)
 
 #############################
 # define macro

@@ -52,7 +52,7 @@ Topics:
 |(4)<br>May 13| **Graphics pipeline**<br>depth buffer method, shading, shadow, anti aliasing | [task04](task04) | [[12]](http://nobuyuki-umetani.com/acg2024s/rasterization_3d.pdf) [[13]](http://nobuyuki-umetani.com/acg2024s/graphics_pipeline.pdf)  |
 |(6)<br>May 20| **Ray Casting 1**<br/>spatial data structure | [task05](task05) | [[14]](http://nobuyuki-umetani.com/acg2024s/shading.pdf)  [[16]](http://nobuyuki-umetani.com/acg2024s/implicit_modeling.pdf) |
 |(7)<br>May 27| **Ray Casting 2**<br>Rendering equation, Monte Carlo integration | [task06](task06) | [[15]](http://nobuyuki-umetani.com/acg2024s/rasterization_subpixel.pdf)   [[17]](http://nobuyuki-umetani.com/acg2024s/ray_casting.pdf) [[18]](http://nobuyuki-umetani.com/acg2024s/monte_carlo_integration.pdf) [[19]](http://nobuyuki-umetani.com/acg2024s/ray_triangle_collision.pdf) |
-|(8)<br>June 3| **Character animation**<br> Linear blend skinning | task07 | |
+|(8)<br>June 3| **Character animation**<br> Linear blend skinning | [task07](task07) | [[20]](http://nobuyuki-umetani.com/acg2024s/character_deformation.pdf) [[21]](http://nobuyuki-umetani.com/acg2024s/jacobian.pdf) |
 |(9)<br>June 10| Guest lecture by Dr. Rex West |  | |
 |(10)<br>June 17| **Optimization** <br> Inverse kinematic | task08 | |
 |(11)<br>June 24| Laplacian mesh deformation | task09 | |
@@ -84,7 +84,7 @@ Look at the following document.
 | [task04](task04) | **Vertex shader practice** <br>Rendering pipeline, mirror reflection, OpenGL | <img src="task04/preview.png" width=100px> |
 | [task05](task05) | **Fragment shader practice**<br>Ray marching method, CSG modeling, implicit modeling | <img src="task05/preview.png" width=100px> |
 | [task06](task06) | **Monte Carlo integration1**<br>Ambient occlusion, importance sampling, BVH | <img src="task06/preview.png" width=100px> |
-| task07 | **Monte Carlo integration2**<br/>Multiple importance sampling | <img src="task07/preview.png" width=100px> |
+| [task07](task07) | **Monte Carlo integration2**<br/>Multiple importance sampling | <img src="task07/preview.png" width=100px> |
 | task08 | **Skeletal Character Animation**<br>Linear blend skinning, articulated rigid body | <img src="task08/preview.png" width=100px> |
 | task09 | TBD |  |
 | task10 | TBD |  |
@@ -136,6 +136,8 @@ Look at the following document.
 - [[18]Monte Carlo Integration](http://nobuyuki-umetani.com/acg2024s/monte_carlo_integration.pdf)
 
 - [[19]Ray Triangle Collision](http://nobuyuki-umetani.com/acg2024s/ray_triangle_collision.pdf)
+- [[20]Character deformation](http://nobuyuki-umetani.com/acg2024s/character_deformation.pdf)
+- [[21]Jacobian&Hessian](http://nobuyuki-umetani.com/acg2024s/jacobian.pdf)
 
   
 
