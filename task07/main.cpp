@@ -69,7 +69,7 @@ auto sampling_brdf_specular(
     const Eigen::Vector2f &unirand) -> std::pair<Eigen::Vector3f, float> {
   const Eigen::Vector3f dir_mirror = dir_in - 2.f * dir_in.dot(nrm) * nrm;
   const float phi = 2.f * float(M_PI) * unirand.y();
-  const float cos_alpha = std::powf(1.f - unirand.x(), 1.f / (shiness + 1.f));
+  const float cos_alpha = std::pow(1.f - unirand.x(), 1.f / (shiness + 1.f));
   const float sin_alpha = std::sqrt(std::max(0.f, 1.f - cos_alpha * cos_alpha));
   const auto dir_loc = Eigen::Vector3f(
       sin_alpha * std::cos(phi),
@@ -78,7 +78,7 @@ auto sampling_brdf_specular(
   const Eigen::Matrix3f loc2world = local_to_world_vector_transformation(dir_mirror);
   const Eigen::Vector3f dir_out = loc2world * dir_loc;
   assert(dir_out.dot(nrm) > 0.f);
-  float brdf = std::powf(cos_alpha, shiness) * (shiness + 1.f) / (2.f * float(M_PI));
+  float brdf = std::pow(cos_alpha, shiness) * (shiness + 1.f) / (2.f * float(M_PI));
   return {dir_out, brdf};
 }
 
@@ -102,7 +102,7 @@ float pdf_brdf_phong(
   float pdf_diffuse = dir_out.dot(nrm) / float(M_PI);
   const Eigen::Vector3f dir_mirror = dir_in - 2.f * dir_in.dot(nrm) * nrm;
   float cos_alpha = dir_mirror.dot(dir_out);
-  float pdf_specular = std::powf(cos_alpha, shiness) * (shiness + 1.f) / (2.f * float(M_PI));
+  float pdf_specular = std::pow(cos_alpha, shiness) * (shiness + 1.f) / (2.f * float(M_PI));
   return (pdf_diffuse * ratio_diffuse + pdf_specular * ratio_specular) / (ratio_diffuse + ratio_specular);
 }
 
