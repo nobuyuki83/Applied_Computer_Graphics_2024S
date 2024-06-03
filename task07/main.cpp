@@ -185,32 +185,32 @@ class Sphere {
 
 const Sphere spheres[4] = {
     {
-        {1.0, 1.0, 0.0}, // position
-        0.4, // rad
+        {1.f, 1.f, 0.f}, // position
+        0.4f, // rad
         2000.f, // shiness
         0.0f, // specular
         0.0f, // diffuse
         1.f // emission
     },
     {
-        {-1.0, -1.0, -1.0}, // position
-        1.0, // rad
+        {-1.f, -1.f, -1.f}, // position
+        1.0f, // rad
         2000.f, // shiness
         0.8f, // specular
         0.2f, // diffuse
         0.f // emission
     },
     {
-        {+1.0, -1.0, -1.0}, // position
-        1.0,
+        {+1.f, -1.f, -1.f}, // position
+        1.f,
         2000.f,
         0.5f,
         0.5f,
         0.f
     },
     {
-      {-1.0, +1.0, -1.0}, // position
-      1.0,
+      {-1.f, +1.f, -1.f}, // position
+      1.f,
           2000.f,
           0.2f,
           0.8f,
