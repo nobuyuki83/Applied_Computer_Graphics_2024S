@@ -13,6 +13,10 @@
 #include "Eigen/Core"
 #include "Eigen/Geometry"
 
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+
 /**
  * ray - sphere intersection
  * @param ray_src
