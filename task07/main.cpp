@@ -156,7 +156,7 @@ class Sphere {
     if (ratio_specular <= 0.f && ratio_diffuse <= 0.f) { return 0.f; }
     const Eigen::Vector3f dir_mirror = dir_in - 2.f * dir_in.dot(dir_nrm) * dir_nrm;
     float cos_alpha = dir_mirror.dot(dir_out);
-    float brdf_specular = std::powf(cos_alpha, shiness) * (shiness + 1.f) / (2.f * float(M_PI));
+    float brdf_specular = std::pow(cos_alpha, shiness) * (shiness + 1.f) / (2.f * float(M_PI));
     float brdf_diffuse = 1.f / float(M_PI);
     return brdf_specular * ratio_specular + brdf_diffuse * ratio_diffuse;
   }
