@@ -52,12 +52,12 @@ Topics:
 |(4)<br>May 13| **Graphics pipeline**<br>depth buffer method, shading, shadow, anti aliasing | [task04](task04) | [[12]](http://nobuyuki-umetani.com/acg2024s/rasterization_3d.pdf) [[13]](http://nobuyuki-umetani.com/acg2024s/graphics_pipeline.pdf)  |
 |(6)<br>May 20| **Ray Casting 1**<br/>spatial data structure | [task05](task05) | [[14]](http://nobuyuki-umetani.com/acg2024s/shading.pdf)  [[16]](http://nobuyuki-umetani.com/acg2024s/implicit_modeling.pdf) |
 |(7)<br>May 27| **Ray Casting 2**<br>Rendering equation, Monte Carlo integration | [task06](task06) | [[15]](http://nobuyuki-umetani.com/acg2024s/rasterization_subpixel.pdf)   [[17]](http://nobuyuki-umetani.com/acg2024s/ray_casting.pdf) [[18]](http://nobuyuki-umetani.com/acg2024s/monte_carlo_integration.pdf) [[19]](http://nobuyuki-umetani.com/acg2024s/ray_triangle_collision.pdf) |
-|(8)<br>June 3| **Character animation**<br> Linear blend skinning | [task07](task07) | [[20]](http://nobuyuki-umetani.com/acg2024s/character_deformation.pdf) [[21]](http://nobuyuki-umetani.com/acg2024s/jacobian.pdf) |
+|(8)<br>June 3| **Character animation**<br> Linear blend skinning | [task07](task07) | [[21]](http://nobuyuki-umetani.com/acg2024s/jacobian.pdf) |
 |(9)<br>June 10| Guest lecture by Dr. Rex West |  | |
-|(10)<br>June 17| **Optimization** <br> Inverse kinematic | task08 | |
-|(11)<br>June 24| Laplacian mesh deformation | task09 | |
-|(12)<br>July 12| **Grid-based Fluid Ⅰ**<br> Poisson equation | task10 |  |
-|(13)<br>July 8| **Grid-based Fluid Ⅱ**<br> Stam fluid | | |
+|(10)<br>June 17| **Character animation2** <br> Inverse kinematic | [task08](task08) | [[20]](http://nobuyuki-umetani.com/acg2024s/character_deformation.pdf) |
+|(11)<br>June 24| **Optimization** | | |
+|(12)<br>July 12| **Laplacian mesh deformation**<br> | task09 |  |
+|(13)<br>July 8| **Grid-based Fluid**<br> Poisson equation, Stam fluid | | |
 
 
 ## Grading
