@@ -68,7 +68,7 @@ class HelloWorld(mglw.WindowConfig):
             self.prog, [(self.vbo_def, '3f', 'in_vert')],
             ebo, 4, mode=moderngl.LINES)  # tell gpu about the mesh information and how to draw it
 
-        # cylinder mesh
+        # cylinder mesh for frame visualization
         (tri2vtx_cyl, vtx2xyz_cyl) = util_for_task08.cylinder_mesh_zup(0.01, 0.05, 16)
         ebo = self.ctx.buffer(tri2vtx_cyl)  # send triangle index data to GPU (element buffer object)
         vbo_cyl = self.ctx.buffer(vtx2xyz_cyl)  # send deformed vertex coordinates data to GPU
@@ -103,8 +103,8 @@ class HelloWorld(mglw.WindowConfig):
             for idx in range(4):  # in gltf each vertex is associated with four bones
                 w = self.vtx2weights[i_vtx][idx]  # rig weight
                 i_bone = self.vtx2bones[i_vtx][idx]  # bone index
-                inverseBindingMatrix = self.bone2invBindingMatrix[i_bone]
-                globalTransformation = bone2globalTransformation[i_bone]
+                inverseBindingMatrix = self.bone2invBindingMatrix[i_bone]  # 4x4 inverse binding matrix
+                globalTransformation = bone2globalTransformation[i_bone]  # 4x4 transformation matrix to deformed bone
                 # write a few lines of codes to compute p1 using the linear blend skinning
                 # hint: use np.matmul for matrix multiplication
                 # hint: assume that rig weights w add up to one
@@ -123,7 +123,7 @@ class HelloWorld(mglw.WindowConfig):
         view_transf = view_rot_y * view_rot_x * transform_to_center
 
         # draw undeformed mesh in red
-        self.prog['matrix'].value = tuple(view_transf.flatten())
+        self.prog['matrix'].value = tuple(view_transf.flatten())  # column major
         self.prog['color'].value = (1., 0., 0.)
         self.vao_ini.render()
 
@@ -138,22 +138,22 @@ class HelloWorld(mglw.WindowConfig):
             transf = bone2globalTransformation[i_bone]
             transf = np.matmul(transf.transpose(), view_transf)
             # z_axis
-            self.prog['matrix'].value = tuple(transf.flatten())
+            self.prog['matrix'].value = tuple(transf.flatten())  # column-major
             self.prog['color'].value = (0., 0.0, 0.8)
             self.vao_cyl.render()
             # x_axis
             x_rot = pyrr.Matrix44.from_y_rotation(math.pi*0.5)
-            self.prog['matrix'].value = tuple((np.matmul(x_rot.transpose(), transf)).flatten())
+            self.prog['matrix'].value = tuple((np.matmul(x_rot.transpose(), transf)).flatten())  # column major
             self.prog['color'].value = (0.8, 0., 0.)
             self.vao_cyl.render()
             # y_axis
             y_rot = pyrr.Matrix44.from_x_rotation(-math.pi*0.5)
-            self.prog['matrix'].value = tuple((np.matmul(y_rot.transpose(), transf)).flatten())
+            self.prog['matrix'].value = tuple((np.matmul(y_rot.transpose(), transf)).flatten())  # column major
             self.prog['color'].value = (0.0, 0.8, 0.)
             self.vao_cyl.render()
 
         # draw deformed mesh in black
-        self.prog['matrix'].value = tuple(view_transf.flatten())
+        self.prog['matrix'].value = tuple(view_transf.flatten())  # column major
         self.prog['color'].value = (0., 0., 0.)
         self.vao_def.render()
 

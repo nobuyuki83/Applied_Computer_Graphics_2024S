@@ -87,7 +87,6 @@ Look at the following document.
 | [task07](task07) | **Monte Carlo integration2**<br/>Multiple importance sampling | <img src="task07/preview.png" width=100px> |
 | task08 | **Skeletal Character Animation**<br>Linear blend skinning, articulated rigid body | <img src="task08/preview.png" width=100px> |
 | task09 | TBD |  |
-| task10 | TBD |  |
 
 ### Policy
 
