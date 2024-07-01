@@ -70,6 +70,7 @@ build
 */shader_ans.frag
 
 !asset/armadillo.obj
+!asset/bunny.obj
 
 venv
 task09/output.png
