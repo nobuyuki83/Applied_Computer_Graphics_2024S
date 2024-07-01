@@ -83,12 +83,14 @@ The program will output `out.png`. Rename it to `out_default.png` then it replac
 
 ![problem1](out_default.png)
 
+This code only move the position of fixed vertex. Let's deform other vertices to make hte deformation smooth!
+
 
 ## Problem 2 (smooth deformation with Laplacian)
 
 Write a few lines of code around line #134 to implement smooth mesh deformation using Laplacian. 
 
-The program will output `output.png`. Rename it to `out_laplacian.png` then it replaces the image below.
+The program will output `out.png`. Rename it to `out_laplacian.png` then it replaces the image below.
 
 ![problem1](out_laplacian.png)
  

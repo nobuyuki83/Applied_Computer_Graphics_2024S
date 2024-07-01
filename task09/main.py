@@ -199,7 +199,7 @@ class HelloWorld(mglw.WindowConfig):
             if rgb.shape[0] == 1000:
                 rgb = rgb[::2, ::2, :].copy('C')
             rgb = Image.fromarray(rgb)
-            ImageOps.flip(rgb).save("output.png")
+            ImageOps.flip(rgb).save("out.png")
 
 
 def main():
