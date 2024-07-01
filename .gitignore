@@ -72,3 +72,4 @@ build
 !asset/armadillo.obj
 
 venv
+task09/output.png

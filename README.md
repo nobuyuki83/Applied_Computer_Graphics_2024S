@@ -55,8 +55,8 @@ Topics:
 |(8)<br>June 3| **Character animation**<br> Linear blend skinning | [task07](task07) | [[21]](http://nobuyuki-umetani.com/acg2024s/jacobian.pdf) |
 |(9)<br>June 10| Guest lecture by Dr. Rex West |  | |
 |(10)<br>June 17| **Character animation2** <br> Inverse kinematic | [task08](task08) | [[20]](http://nobuyuki-umetani.com/acg2024s/character_deformation.pdf) |
-|(11)<br>June 24| **Optimization** | | |
-|(12)<br>July 12| **Laplacian mesh deformation**<br> | task09 |  |
+|(11)<br>June 24| **Optimization**<br> Newton-Raphson method, gradient descent | | [[22]](http://nobuyuki-umetani.com/acg2024s/optimization.pdf) |
+|(12)<br>July 1| **Laplacian mesh deformation**<br> Sparse linear system | [task09](task09) | [[23]](http://nobuyuki-umetani.com/acg2024s/mesh_laplacian.pdf) [[24]](http://nobuyuki-umetani.com/acg2024s/sparse_linear_system.pdf) |
 |(13)<br>July 8| **Grid-based Fluid**<br> Poisson equation, Stam fluid | | |
 
 
@@ -85,8 +85,8 @@ Look at the following document.
 | [task05](task05) | **Fragment shader practice**<br>Ray marching method, CSG modeling, implicit modeling | <img src="task05/preview.png" width=100px> |
 | [task06](task06) | **Monte Carlo integration1**<br>Ambient occlusion, importance sampling, BVH | <img src="task06/preview.png" width=100px> |
 | [task07](task07) | **Monte Carlo integration2**<br/>Multiple importance sampling | <img src="task07/preview.png" width=100px> |
-| task08 | **Skeletal Character Animation**<br>Linear blend skinning, articulated rigid body | <img src="task08/preview.png" width=100px> |
-| task09 | TBD |  |
+| [task08](task08) | **Skeletal Character Animation**<br>Linear blend skinning, articulated rigid body | <img src="task08/preview.png" width=100px> |
+| [task09](task09) | **Laplacian Mesh Deformation**<br> Quadratic programming, sparse linear system | <img src="task09/preview.png" width=100px> |
 
 ### Policy
 
@@ -136,9 +136,10 @@ Look at the following document.
 
 - [[19]Ray Triangle Collision](http://nobuyuki-umetani.com/acg2024s/ray_triangle_collision.pdf)
 - [[20]Character deformation](http://nobuyuki-umetani.com/acg2024s/character_deformation.pdf)
-- [[21]Jacobian&Hessian](http://nobuyuki-umetani.com/acg2024s/jacobian.pdf)
-
-  
+- [[21] Jacobian&Hessian](http://nobuyuki-umetani.com/acg2024s/jacobian.pdf)
+- [[22] Optimization](http://nobuyuki-umetani.com/acg2024s/optimization.pdf)
+- [[23] Mesh laplacian](http://nobuyuki-umetani.com/acg2024s/mesh_laplacian.pdf)
+- [[24] Sparse linear system](http://nobuyuki-umetani.com/acg2024s/sparse_linear_system.pdf)
 
 
 
